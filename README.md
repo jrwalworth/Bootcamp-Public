@@ -1,2 +1,2 @@
-# Pre-Bootcamp-Public
-Pre Bootcamp work for Coding Dojo
+# Bootcamp-Public
+Bootcamp work for Coding Dojo
