@@ -1,0 +1,348 @@
+* {
+    padding:0;
+    margin:0;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+.header {
+    background-color: black;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    background-color: black;
+    height: 50px;
+    bottom: 1px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+}
+
+
+.wrapper {
+    margin:0;
+    padding:0;
+    display: flex;
+    justify-content: center;
+
+}
+.container {
+    width: 800px;
+    height: 500px;
+    padding: 10px;
+    margin-left: 25px;
+    display: flex;
+
+}
+
+.main {
+    flex: 2;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.card {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    border: 1px solid lightslategrey;
+    box-shadow: 2px 2px lightslategray;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    
+}
+.c-head {
+    background-color: rgb(63, 166, 197);
+    border-radius: 5px;
+    height: 100px;
+    margin-bottom: -50px;
+}
+
+#profile-pic {
+    display: fixed;
+    height: 80px;
+    width: 80px;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+.e-card {
+    border: 1px lightslategray solid;
+    height: inherit;
+    position: relative;
+    box-shadow: 1px 1px lightslategray;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+.e-head {
+    height: 45px;
+    background-color: rgb(77, 74, 74);
+    color: white;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    border-radius: 1px;
+}
+
+.t-card {
+    border: 1px lightslategray solid;
+    height: inherit;
+    position: relative;
+    box-shadow: 1px 1px lightslategray;
+    border-radius: 2px;
+    width: 250px;
+    margin-bottom: 25px;
+}
+.t-head {
+    height: 45px;
+    background-color: rgb(77, 74, 74);
+    color: white;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    border-radius: 1px;
+}
+
+h5, h4 {
+    margin-left: 25px;
+}
+
+.edu {
+    width: 100%;
+    height: 150px;
+}
+
+.edu-content {
+    margin-top: 10px;
+    padding: 3px;
+    margin-left: 10px;
+}
+
+#edu-time {
+    color: grey;
+    font-weight: bold;
+    margin: 5px;
+}
+
+#edu-details {
+    margin-top: 10px;
+}
+
+
+.rightbar {
+    flex: 1;
+    margin-right:10px;
+    padding: 5px;
+    display: block;
+}
+.nav {
+    width:800px;
+    padding: 1px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-title {
+    margin:0;
+    padding-top:3px;
+    padding-bottom:3px;
+    font-weight: 400;
+    margin-left: 15px;
+    align-items: center;
+}
+
+.nav-links {
+    margin:0;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: space-between;
+    
+}
+
+li {
+    margin: 10px;
+
+}
+
+.btn {
+    background-color: rgb(33, 154, 184);
+    color: white;
+    border: 2px solid black;
+    box-shadow: 3px 3px black;
+    margin-left: 250px;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.active {
+    font-weight: 600;
+}
+
+.req-count {
+    min-width: 25px;
+    max-width: fit-content;
+    height: 25px;
+    background-color: rgb(156, 148, 148);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+}
+
+.icon {
+    height: 20px;
+    width: 15px;
+}
+
+.edit {
+    display: flex; 
+    align-items: center;
+    margin-left: 10px;
+    color: blue;
+    text-decoration:underline;
+    cursor: pointer;
+}
+
+.edit .icon {
+    height: 15px;
+}
+
+.edit-link {
+    margin-left: 10px;
+    color: blue;
+    text-decoration:underline;
+}
+
+.info {
+    width: 300px;
+    padding-left: 25px;
+}
+.location {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+}
+
+.details {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.c-icon {
+    height: 35px;
+    width: 35px;
+    margin: 3px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.r-connect {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.r-names, .c-names {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.r-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.c-add {
+    width: 20px;
+    height: 20px;
+    background-color: grey;
+    margin: 5px;
+    border-radius: 50%;
+    padding: 2px;
+    text-align:center;
+    cursor: pointer;
+}
+.c-add:hover {
+    background-color: rgb(71, 156, 212);
+}
+
+.c-remove {
+    width: 20px;
+    height: 20px;
+    background-color: grey;
+    margin: 5px;
+    border-radius: 50%;
+    padding: 2px;
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.c-remove:hover {
+    background-color: rgb(212, 87, 71);
+}
+
+.connection-names {
+    height: fit-content;
+}
+
+/*Found this code to create a checkmark using css on tutorialspoint.com */
+.add {
+    display: inline-block;
+    height: 15px;
+    width: 3px;
+    border-bottom: 4px solid white;
+    border-right: 4px solid white;
+    transform: rotate(45deg);
+}
+/*Reviewed how to get a small x on w3schools ccsref-tryit */
+.remove:after {
+    display: flex;
+    height: 20px;
+    width: 20px;
+    content: ' \0078';
+    color: white;
+    font-weight: bold;
+    font-size:x-large;
+    justify-content: center;
+    align-items: center;
+    margin-top:-4px;
+
+
+}
+.y-connect {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.view-m {
+    height: 25px;
+    border-top: 2px solid grey;
+}
