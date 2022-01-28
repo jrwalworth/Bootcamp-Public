@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    /* border: 2px red dotted; */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+
+.wrapper {
+    margin: 0 auto;
+    width: 800px;
+}
+
+
+.head {
+    background-color: rgb(121, 178, 243);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 30px;
+
+}
+
+.main {
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+.main-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.weekly {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.day {
+    width: 150px;
+    background-color: rgb(219, 217, 217);
+    text-align: center;
+}
+
+.temps {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.high {
+    color: rgb(236, 105, 105);
+}
+
+.low {
+    color: rgb(101, 101, 238)
+}
+
+#temp-select{
+    border: 3px solid black;
+}
+
+
+.cookie {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 710px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.cookie-msg {
+    width: 55%;
+}
+
+#c-img {
+    width: 75px;
+}
+
+.btn {
+    background-color: rgb(33, 154, 184);
+    color: white;
+    border: 2px solid black;
+    box-shadow: 3px 3px black;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor:pointer;
+    height: 20px;
+}
+
+h2, h4 {
+    padding: 10px;
+}
+
+
+img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    width: 230px;
+}
+
+li {
+    list-style: none;
+    margin: 5px;
+    cursor: pointer;
+}

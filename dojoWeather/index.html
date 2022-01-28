@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Dojo Weather</title>
+        <meta name="description" content="DojoWeather Assignment - Jason Walworth">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="head">
+                <h1 class="head-title">DojoWeather</h1>
+                <ul>
+                    <li onclick="changeCity(this)">Burbank</li>
+                    <li onclick="changeCity(this)">Chicago</li>
+                    <li onclick="changeCity(this)">Dallas</li>
+                </ul>
+            </div>
+            <div class="main">
+                <div class="main-head">
+                    <h1 class="city-title">San Jose</h1>
+                    <p class="temp-convert">show temperature in <span id="temp-trigger">
+                        <select name="temp-names" id="temp-select" onchange="tempConvert(this)">
+                            <option value="C">C&deg;</option>
+                            <option value="F">F&deg;</option>
+                        </select></span></p>
+                </div>
+                <div class="weekly">
+                    <div class="day" id="today">
+                        <h2>Today</h2>
+                        <img src="assets/some_rain.png" alt="forecast image">
+                        <h4>some rain</h4>
+                        <div class="temps">
+                            <h2 class="high"><span class="high-temp">24</span>&deg;</h2>
+                            <h2 class="low"><span class="low-temp">18</span>&deg;</h2>
+                        </div>
+                    </div>
+                    <div class="day" id="tomorrow">
+                        <h2>Tomorrow</h2>
+                        <img src="assets/some_sun.png" alt="forecast image">
+                        <h4>some sun</h4>
+                        <div class="temps">
+                            <h2 class="high"><span class="high-temp">27</span>&deg;</h2>
+                            <h2 class="low"><span class="low-temp">19</span>&deg;</h2>
+                        </div>
+                    </div>
+                    <div class="day" id="in2days">
+                        <h2>Saturday</h2>
+                        <img src="assets/some_clouds.png" alt="forecast image">
+                        <h4>some clouds</h4>
+                        <div class="temps">
+                            <h2 class="high"><span class="high-temp">21</span>&deg;</h2>
+                            <h2 class="low"><span class="low-temp">16</span>&deg;</h2>
+                        </div>
+                    </div>
+                    <div class="day" id="in3days">
+                        <h2>Sunday</h2>
+                        <img src="assets/some_sun.png" alt="forecast image">
+                        <h4>some sun</h4>
+                        <div class="temps">
+                            <h2 class="high"><span class="high-temp">26</span>&deg;</h2>
+                            <h2 class="low"><span class="low-temp">21</span>&deg;</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cookie">
+                <img id="c-img" src="assets/cookie.png" alt="cookie-image">
+                <div class="cookie-msg">
+                    <h3>Stop! Cookie time</h3>
+                    <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media
+                        features and to analyze our traffic. <a href="">Read more...</a>
+                    </p>
+                </div>
+                <button class="btn" onclick="dismissCookie('.cookie')">I Accept</button>
+            </div>
+
+
+
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
