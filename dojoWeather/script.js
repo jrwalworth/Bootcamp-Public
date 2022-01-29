@@ -18,31 +18,43 @@ function dismissCookie (element) {
 }
 
 function tempConvert(element) {
-    var vTemp = document.querySelector("#temp-select").value;
-    //console.log(vTemp);
-
-    //declare array to capture all high and low temps
-    var tempsArray
-    //for loop to go through each day's high and low temps
-    //for each ".high-temp" and each ".low-temp"
     
+    var vTemp = document.querySelector("#temp-select").value;
+
+    //declare arrays to capture all high and low temps
+    var htemps = document.getElementsByClassName('high-temp');
+    console.log(htemps.length);
+
+    var ltemps = document.getElementsByClassName('low-temp');
+    console.log(ltemps);
+
+    // TODO - combine temps into one array
+    // var allTemps = htemps.concat(ltemps);
+    // console.log(allTemps);
+
+    //console.log(allTemps);
+    //console.log(temps);
+
     //conditional onSelect to calculate conversion for Celsuis to Farenheight
     if (vTemp == 'F') {
-        //change high temp value
-        highVal = document.querySelector(".high-temp").innerText;
-        highVal = highVal * 1.8 + 32;
-        document.querySelector(".high-temp").innerText = highVal;
-        //change low temp value
-        lowVal = document.querySelector(".low-temp").innerText;
-        lowVal = Math.round(lowVal *1.8 + 32);
-        document.querySelector(".low-temp").innerText = lowVal;
-    }else {
-        //convert F back to C for high temp
-        highVal = (highVal -32) * 5/9;
-        document.querySelector(".high-temp").innerText = highVal;
-        //convert F back to C for low temp
-        lowVal = Math.round((lowVal -32) * 5/9);
+        for (var i=0; i < htemps.length; i++) {
+            var uhtemp = htemps[i].innerText;
+            var ultemp = ltemps[i].innerText;
+            uhtemp = Math.round(uhtemp * 1.8 +32);
+            ultemp = Math.round(ultemp * 1.8 +32);
+            htemps[i].innerText = uhtemp;
+            ltemps[i].innerText = ultemp;
+        }
+    } else {
+        for (var i=0; i < htemps.length; i++) {
+            var uhtemp = htemps[i].innerText;
+            var ultemp = ltemps[i].innerText;
+            uhtemp = Math.round((uhtemp -32) * 5/9);
+            ultemp = Math.round((ultemp -32) * 5/9);
+            htemps[i].innerText = uhtemp;
+            ltemps[i].innerText = ultemp;
+        }
 
-        document.querySelector(".low-temp").innerText = lowVal;
     }
+
 }
