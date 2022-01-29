@@ -23,10 +23,10 @@ function tempConvert(element) {
 
     //declare arrays to capture all high and low temps
     var htemps = document.getElementsByClassName('high-temp');
-    console.log(htemps.length);
+    //console.log(htemps.length);
 
     var ltemps = document.getElementsByClassName('low-temp');
-    console.log(ltemps);
+    //console.log(ltemps);
 
     // TODO - combine temps into one array
     // var allTemps = htemps.concat(ltemps);
