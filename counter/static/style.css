@@ -1,0 +1,41 @@
+* {
+    margin:0;
+    padding:0;
+    
+}
+body {
+    display: flex;
+    justify-content: center;
+}
+
+h1, p{
+    text-align: center;
+    margin-bottom:25px;
+}
+
+.btn {
+    padding: 3px;
+    margin:15px;
+    opacity: 50%;
+}
+.main {
+    margin: 50px;
+    width: 250px;
+}
+
+#add {
+    background-color: green;
+}
+
+.buttons {
+    display:flex;
+    justify-content: space-between;
+}
+
+#reset {
+    background-color:brown;
+}
+
+.btn:hover {
+    opacity: 100%;
+}
